@@ -20,7 +20,10 @@ class Home extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text('New Game'),
+                  OutlinedButton(
+                    child: Text('New Game'),
+                    onPressed: () => null,
+                  ),
                   Text('Continue'),
                 ],
               ),
