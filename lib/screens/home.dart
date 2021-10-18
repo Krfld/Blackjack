@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import '../.imports.dart';
 
 class Home extends StatelessWidget {
@@ -5,9 +7,17 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Blackjack'),
+    return Scaffold(
+      body: Column(
+        children: [
+          Text('Blackjack'),
+          Column(
+            children: [
+              Text('New Game'),
+              Text('Continue'),
+            ],
+          ),
+        ],
       ),
     );
   }

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import './.imports.dart';
 
 void main() => runApp(const MyApp());
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       routes: {
-        'Home': (context) => const Home(),
+        'Home': (context) => Home(),
       },
       initialRoute: 'Home',
     );
