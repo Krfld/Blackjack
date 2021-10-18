@@ -26,17 +26,11 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   OutlinedButton(
-                    child: Text(
-                      'New Game',
-                      style: textTheme.headline6,
-                    ),
+                    child: Text('New Game', style: textTheme.headline6),
                     onPressed: () => null,
                   ),
                   OutlinedButton(
-                    child: Text(
-                      'Continue',
-                      style: textTheme.headline6,
-                    ),
+                    child: Text('Continue', style: textTheme.headline6),
                     onPressed: () => null,
                   ),
                 ],
