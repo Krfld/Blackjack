@@ -10,12 +10,21 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text('Blackjack'),
-          Column(
-            children: [
-              Text('New Game'),
-              Text('Continue'),
-            ],
+          Expanded(
+            child: Center(
+              child: Text('Blackjack'),
+            ),
+          ),
+          Expanded(
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text('New Game'),
+                  Text('Continue'),
+                ],
+              ),
+            ),
           ),
         ],
       ),
