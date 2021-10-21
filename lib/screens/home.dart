@@ -28,7 +28,9 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   OutlinedButton(
-                    style: OutlinedButton.styleFrom(padding: EdgeInsets.all(32)),
+                    style: OutlinedButton.styleFrom(
+                        padding: EdgeInsets.all(32),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(8)))),
                     child: Text('New Game', style: textTheme.headline6),
                     onPressed: () => null,
                   ),
