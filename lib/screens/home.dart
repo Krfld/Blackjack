@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:flutter/cupertino.dart';
+
 import '../.imports.dart';
 
 class Home extends StatelessWidget {
@@ -26,11 +28,8 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   OutlinedButton(
+                    style: OutlinedButton.styleFrom(padding: EdgeInsets.all(32)),
                     child: Text('New Game', style: textTheme.headline6),
-                    onPressed: () => null,
-                  ),
-                  OutlinedButton(
-                    child: Text('Continue', style: textTheme.headline6),
                     onPressed: () => null,
                   ),
                 ],
