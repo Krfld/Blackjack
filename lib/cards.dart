@@ -5,9 +5,6 @@ import './.imports.dart';
 final Cards cards = Cards();
 
 class Cards {
-  List _deck = [];
-  List get deck => _deck;
-
   static final List jokers = [15.1, 15.2];
   static final List allCards = [
     14.1, 14.2, 14.3, 14.4, // A
@@ -47,6 +44,17 @@ class Cards {
     1: 'J',
   };
 
+  ///
+  ///
+  ///
+
+  List _deck = [];
+  List get deck => _deck;
+
+  ///
+  ///
+  ///
+
   List setup(int decks) {
     _deck = [];
     for (int i = 0; i < decks; i++) _deck.addAll(allCards);
@@ -71,7 +79,7 @@ class Cards {
     return deck.take(amount).toList();
   }*/
 
-  Map toMap(List cards) {
+  /*Map toMap(List cards) {
     Map hand = {};
     for (var card in cards) {
       if (!hand.containsKey(getValue(card)))
@@ -82,7 +90,7 @@ class Cards {
         hand[getValue(card)].add(getSuit(card));
     }
     return hand;
-  }
+  }*/
 
   int getValue(double card) => card.toInt();
 
