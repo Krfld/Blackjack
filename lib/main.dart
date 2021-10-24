@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'Home': (context) => Home(),
       },
-      home: SafeArea(child: Home()),
+      home: Home(),
     );
   }
 }
