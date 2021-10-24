@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:flutter/cupertino.dart';
-
 import '../.imports.dart';
 
 class Home extends StatelessWidget {
@@ -29,8 +27,11 @@ class Home extends StatelessWidget {
                 children: [
                   OutlinedButton(
                     style: OutlinedButton.styleFrom(
-                        padding: EdgeInsets.all(32),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(8)))),
+                      padding: EdgeInsets.all(32),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(8)),
+                      ),
+                    ),
                     child: Text('New Game', style: textTheme.headline6),
                     onPressed: () => null,
                   ),

@@ -5,7 +5,7 @@ import './.imports.dart';
 final Cards cards = Cards();
 
 class Cards {
-  static final List jokers = [15.1, 15.2]; // J
+  //static final List jokers = [15.1, 15.2]; // J
   static final List allCards = [
     14.1, 14.2, 14.3, 14.4, // A
     13.1, 13.2, 13.3, 13.4, // K
