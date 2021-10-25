@@ -30,13 +30,11 @@ class Home extends StatelessWidget {
                   tilePadding: EdgeInsets.all(16),
                   title: Text('Xiu'),
                   children: [
-                    TextButton(
-                      style: TextButton.styleFrom(
+                    OutlinedButton(
+                      style: OutlinedButton.styleFrom(
                         splashFactory: InkRipple.splashFactory,
                         padding: EdgeInsets.all(32),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(16)),
-                        ),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16))),
                       ),
                       child: Text('Continue', style: textTheme.headline4),
                       onPressed: () => app.msg('Click', context: context),
