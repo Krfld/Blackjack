@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import '../.imports.dart';
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+class Setup extends StatelessWidget {
+  const Setup({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,15 +15,15 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text('Blackjack', style: textTheme.headline2),
-            TextButton(
-              style: TextButton.styleFrom(
+            Container(),
+            OutlinedButton(
+              style: OutlinedButton.styleFrom(
                 splashFactory: NoSplash.splashFactory,
                 padding: EdgeInsets.all(32),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16))),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(64))),
               ),
-              child: Text('New Game', style: textTheme.headline4),
-              onPressed: () => Navigator.pushNamed(context, 'Setup'),
+              child: Text('Ready', style: textTheme.headline5),
+              onPressed: () => app.msg('Click'),
             ),
           ],
         ),

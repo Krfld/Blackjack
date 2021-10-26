@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:flutter/material.dart';
 import './.imports.dart';
 
 void main() => runApp(MyApp());
@@ -17,6 +18,8 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         'Home': (context) => Home(),
+        'Setup': (context) => Setup(),
+        'Profile': (context) => Profile(),
       },
       home: Home(),
     );
