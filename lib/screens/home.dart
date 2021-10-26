@@ -23,7 +23,7 @@ class Home extends StatelessWidget {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16))),
               ),
               child: Text('New Game', style: textTheme.headline4),
-              onPressed: () => Navigator.pushNamed(context, 'Setup'),
+              onPressed: () => Navigator.pushNamed(context, '//!'),
             ),
           ],
         ),
